@@ -18,9 +18,17 @@
       :key="tab"
       :id="tab"
       >
-      <v-card flat>
+      <v-card flat class="text-xs-center mt-3">
         <v-card-text>{{ text }}</v-card-text>
+        <v-radio-group v-model="ex9" :mandatory="false">
+          <v-radio label="Radio 1" value="radio-1" dark></v-radio>
+          <v-radio label="Radio 2" value="radio-2" dark></v-radio>
+          <v-radio label="Radio 3" value="radio-3" dark></v-radio>
+          <v-radio label="Radio 4" value="radio-4" dark></v-radio>
+        </v-radio-group>
       </v-card>
+
+
     </v-tabs-content>
   </v-tabs-items>
 </v-tabs>
