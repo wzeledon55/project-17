@@ -12,6 +12,7 @@
     </v-toolbar-items>
     <v-toolbar-items class="hidden-xs-only" v-show="visi" >
       <v-btn flat router to="/login" v-on:click.native="visi=false">Login</v-btn>
+      <v-btn flat router to="/Signup" v-on:click.native="visi=false">Sign Up</v-btn>
     </v-toolbar-items>
   </v-toolbar>
   <router-view></router-view>

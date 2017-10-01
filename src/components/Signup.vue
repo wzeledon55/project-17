@@ -7,19 +7,17 @@
       </div>
 
       <div class="container">
-        <label><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
 
-        <label><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <label><b>Email Address</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
 
-        <button type="submit">Login</button>
-        <input type="checkbox" checked="checked"> Remember me
+        <button type="submit">Sign Up</button>
       </div>
 
       <div class="container" style="background-color:#f1f1f1">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="psw"> <a href="#">Forgot password?</a></span>
       </div>
     </form>
   </div>
@@ -27,11 +25,10 @@
 
 <script>
 export default {
-  name: 'login',
+  name: 'signup',
   data () {
     return {
-      model: document.getElementById('id01'),
-      visi: true
+      model: document.getElementById('id01')
     }
   }
 }
